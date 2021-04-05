@@ -1,0 +1,10 @@
+.xxl_tit_tab { border:1px solid #ccd5dd; height:42px; background-color:#f8f8f8; -webkit-border-radius: 7px 7px 0px 0px;-moz-border-radius: 7px 7px 0px 0px;border-radius: 7px 7px 0px 0px; border-bottom:1px dotted #ccd5dd; font-family: Tahoma; font-size:13px; letter-spacing:0.06em; color: #26292F; }
+.xxl_let_tab, .xxl_let_tabl { font-family: Arial; font-size:12px; letter-spacing:0.03em; color:#474E58; line-height:14pt; text-decoration:none; padding:4px 0px; }
+.xxl_let_tabl:hover { color: #389ED6; }
+.xxl_inp_tab { text-align:center; width:40px; font-family: Arial; font-size: 12px; border: 1px solid #FFFFFF; }
+.xxl_let_tott, .xxl_let_totv { font-family: Arial; letter-spacing:0.03em; line-height:14pt; text-decoration:none; text-align:right; height:22px;}
+.xxl_let_tott { color: #677281; font-size:11px; }
+.xxl_let_totv { color: #364054; font-size:12px; font-weight:bold; }
+.xxl_combo { font-family: Arial; font-size:11px; padding: 2px 3px; border:1px solid #A9ADB8; color: #4A5059}
+.lixoxxl { background-image:url('../imagens/lixoxxl.png'); position:relative; cursor:pointer; background-repeat:no-repeat; background-position: 0 0; width:13px; height:13px; margin-left:3px; }
+.lixoxxl:hover { background-position: 0 100%; }

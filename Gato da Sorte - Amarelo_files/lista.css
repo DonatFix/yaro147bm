@@ -1,0 +1,5 @@
+.ccjan { position:absolute; width:610px; height:410px; padding:50px; background-image: url(../imagens/bgp70.png); z-index:20000; text-align:center;}
+.ccsjan { position:relative; width:600px; height:400px; background-color:#ffffff; color:#000000; border:5px solid #000000; }
+
+.albjan { position:absolute; width:954px; height:701px; padding:20px; background-image: url(../imagens/bgp60.png); z-index:20000; text-align:center;}
+.albsjan { position:relative; width:944px; height:691px; color:#000000; border:5px solid #000000; }

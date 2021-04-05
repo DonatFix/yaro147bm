@@ -1,0 +1,52 @@
+$(function(){
+	$(".procurar").keyup(function() {
+		var procurar = $(this).val();
+		var dataString = 'procurar='+ procurar;
+		if (procurar.length>=2) {
+		    $.ajax({
+			    type: "GET",
+			    url: "../blocos/search.php",
+			    data: dataString,
+			    cache: false,
+			    success: function(html) {
+				    $("#paresult").html(html).slideDown(500);
+			    }
+			});
+		} else { $("#paresult").slideUp(500); return false; }
+	});
+
+	jQuery("#paresult").live("click",function(e){
+	    var $clicked = $(e.target);
+	    var $name = $clicked.find('.name').html();
+	    var decoded = $("<div/>").html($name).text();
+	    $('#procurar').val(decoded);
+	});
+
+	jQuery(document).live("click", function(e) {
+	    var $clicked = $(e.target);
+	    if (! $clicked.hasClass("procurar")){
+	    jQuery("#paresult").slideUp(500);
+	    }
+	});
+
+});
+
+function tamanhopa(n) {
+    switch(n) {
+		case 1: document.getElementById("paresult").style.height = "90px"; break;
+		case 2: document.getElementById("paresult").style.height = "180px"; break;
+		default: document.getElementById("paresult").style.height = "350px";
+    }
+}
+
+function abre_pesquisa_av() {
+$("#pesqav").slideToggle( "slow" );
+}
+
+var pavcab = 0;
+function abre_pesquisa_av2() {
+    if ($("#pesqav").is(":hidden")) pavcab = 0;
+    $("#pesqav").slideToggle( "slow" );
+    if (menuh_topo_sempre_presente) pesq_dist_top = 45; else pesq_dist_top = 0;
+    if (!pavcab) { $("html, body").animate({ scrollTop: $("#pesqav").offset().top-pesq_dist_top }, 500); pavcab = 1; } else pavcab = 0;
+}

@@ -1,0 +1,12 @@
+function abre_carrinho(id) {
+	var pat;
+    document.getElementById("ifcompra").src = "../blocos/lcompra.php?id="+id;
+    pat = document.getElementById("dccjan");
+    pat.style.top = (($(window).height() - 420)/2 + $(document).scrollTop())+'px';
+	pat.style.left = (($(window).width() - 620)/2)+'px';
+    $( "#dccjan" ).slideDown( "slow" );
+}
+
+function fecha_carrinho() {
+   $( "#dccjan" ).slideUp( 500 );
+}

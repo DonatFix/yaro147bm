@@ -1,0 +1,19 @@
+function abre_sugerir(id) {
+	var pat;
+    document.getElementById("ifsugerir").src = "../blocos/sugerir_pop.php?id="+id;
+    pat = document.getElementById("dsujan");
+    pat.style.top = (($(window).height() - 720)/2 + $(document).scrollTop())+'px';
+	pat.style.left = (($(window).width() - 915)/2)+'px';
+    $( "#dsujan" ).slideDown( "slow" );
+}
+
+function fecha_sugerir() {
+   $( "#dsujan" ).slideUp( 500 );
+}
+
+$(document).mouseup(function(e) {
+   var container = $("#dsujan");
+   if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.slideUp(350);
+   }
+});

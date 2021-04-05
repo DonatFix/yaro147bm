@@ -1,0 +1,38 @@
+function FIND(item) {
+	if( window.mmIsOpera ) return(document.getElementById(item));
+	if (document.all) return(document.all[item]);
+	if (document.getElementById) return(document.getElementById(item));
+	return(false);
+}
+
+function moveXbySlicePos (x, img) {
+	if (!document.layers) {
+		var onWindows = navigator.platform ? navigator.platform == "Win32" : false;
+		var macIE45 = document.all && !onWindows && getExplorerVersion() == 4.5;
+		var par = img;
+		var lastOffset = 0;
+		while(par){
+			if( par.leftMargin && ! onWindows ) x += parseInt(par.leftMargin);
+			if( (par.offsetLeft != lastOffset) && par.offsetLeft ) x += parseInt(par.offsetLeft);
+			if( par.offsetLeft != 0 ) lastOffset = par.offsetLeft;
+			par = macIE45 ? par.parentElement : par.offsetParent;
+		}
+	} else if (img.x) x += img.x;
+	return x;
+}
+
+function moveYbySlicePos (y, img) {
+	if(!document.layers) {
+		var onWindows = navigator.platform ? navigator.platform == "Win32" : false;
+		var macIE45 = document.all && !onWindows && getExplorerVersion() == 4.5;
+		var par = img;
+		var lastOffset = 0;
+		while(par){
+			if( par.topMargin && !onWindows ) y += parseInt(par.topMargin);
+			if( (par.offsetTop != lastOffset) && par.offsetTop ) y += parseInt(par.offsetTop);
+			if( par.offsetTop != 0 ) lastOffset = par.offsetTop;
+			par = macIE45 ? par.parentElement : par.offsetParent;
+		}
+	} else if (img.y >= 0) y += img.y;
+	return y;
+}

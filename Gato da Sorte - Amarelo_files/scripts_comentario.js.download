@@ -1,0 +1,19 @@
+function abre_comentario(id) {
+	var pat;
+    document.getElementById("ifcomentario").src = "../blocos/comentario_pop.php?id="+id;
+    pat = document.getElementById("dcojan");
+    pat.style.top = (($(window).height() - 720)/2 + $(document).scrollTop())+'px';
+	pat.style.left = (($(window).width() - 915)/2)+'px';
+    $( "#dcojan" ).slideDown( "slow" );
+}
+
+function fecha_comentario() {
+   $( "#dcojan" ).slideUp( 500 );
+}
+
+$(document).mouseup(function(e) {
+   var container = $("#dcojan");
+   if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.slideUp(350);
+   }
+});

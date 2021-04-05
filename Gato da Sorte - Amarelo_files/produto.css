@@ -1,0 +1,27 @@
+.zcabfp1 {
+	border-top-left-radius: 6px; -moz-border-top-left-radius: 6px; -webkit-border-top-left-radius: 6px;
+	border-top-right-radius: 6px; -moz-border-top-right-radius: 6px; -webkit-border-right-left-radius: 6px;
+    text-align:left; padding:10px 12px; margin-bottom:2px;
+}
+
+.fsepoff {
+	position:relative; background-color:#EDEDED; cursor:pointer; color:#5E5F71; font-family:Arial; font-size:10px; line-height:30px; font-weight: bold; text-decoration: none; padding:0px 15px;
+}
+.fsepoff:hover { background-color:#CDCED6; color:#3C3D48; }
+.fsepon {
+	position:relative; background-color:#717993; cursor:pointer; color:#ffffff; font-family:Arial; font-size:10px; line-height:30px; font-weight: bold; text-decoration: none; padding:0px 15px;
+}
+.sepfun {
+	background-color:#EDEDED; height:30px; text-align:left; padding:8px 0px 0px 7px;
+    border-top-left-radius: 6px; -moz-border-top-left-radius: 6px; -webkit-border-top-left-radius: 6px;
+	border-top-right-radius: 6px; -moz-border-top-right-radius: 6px; -webkit-border-right-left-radius: 6px;
+}
+
+.bgaddt { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border:1px solid #D7D7D7; padding:3px 1px 0px; overflow:hidden; height:19px; display:inline-block; }
+.bgaddt:hover { background-color:#D7D7D7; }
+.bgatt { padding:1px 1px 2px; }
+
+.sujan { position:absolute; width:810px; height:640px; padding:50px; background-image: url(../imagens/bgp70.png); z-index:20000; text-align:center;}
+.susjan { position:relative; width:800px; height:650px; background-color:#ffffff; color:#000000; border:5px solid #000000; }
+.ctsred4 { border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+.ctsred5 { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }

@@ -1,0 +1,264 @@
+var menuh_topo_sempre_presente = 0;
+
+function checkmod(num) {
+      val=0;
+      for (pos=0; pos<num.length-1; ++pos) {
+        val += (1 * num.charAt(pos)) * (9 - pos);
+      }
+      ctl = val % 11 ? (11 - val % 11) % 10 : 0;
+
+      return ctl == (1 * num.charAt(pos));
+    }
+
+function validanif(num) {
+      var erro="";
+      if(num.length != 9) erro = "Contribuinte inválido!<br>";
+      if (!checkmod(num)) erro = "Contribuinte inválido!<br>";
+      return (erro);
+    }
+
+function verifica_numero(campo,nome) {
+	var erroi = "";
+    var re = /^\d+(\.\d+)?$/;
+  	if (!re.test(campo)) erroi = "» " + nome + " inválido! Foram detectados caracteres inválidos<br>";
+    return(erroi);
+}
+
+function verifica_contacto(campo,nome) {
+	var erroi = "";
+    var re = /^\d+(\.\d+)?$/;
+  	if (!re.test(campo)) erroi = "» " + nome + " inválido! Foram detectados caracteres inválidos<br>";
+    if (campo.length<8) erroi = "» " + nome + " inválido! O " + nome + " deve ter no mínimo 8 caracteres<br>";
+    return(erroi);
+}
+
+//Newsletter
+	function verifica_email(campo) {
+        var erroi = "";
+		var emailFilter=/^.+@.+\..{2,3}$/;
+		if (!(emailFilter.test(campo))) erroi = "E-Mail inválido!<br>";
+        var illegalChars= /[\(\)\<\>\,\;\:\\\/\"\[\]]/
+		if ((campo.match(illegalChars)) && (erroi=="")) erroi = "[E-Mail] inválido!\n";
+        return(erroi);
+    }
+
+function submeter_pa() {
+      var erro = "";
+
+      if (document.formulario.preco_desde.value!="")  erro = erro + verifica_numero(document.formulario.preco_desde.value,'Preço desde');
+
+      if (document.formulario.preco_ate.value!="")  erro = erro + verifica_numero(document.formulario.preco_ate.value,'Preço até');
+
+      if (erro!="") {
+        window.alert("ERROS DETECTADOS NO FORMULÁRIO:\n\n" + erro);
+      } else document.formulario.submit();
+}
+
+
+function submeter() {
+      var erro = "";
+
+      if (document.formulario.nome.value=="")  erro = erro + "Tem que introduzir o Nome!<br>";
+
+      if (document.formulario.mensagem.value=="")  erro = erro + "Tem que introduzir a mensagem!<br>";
+
+      if (document.formulario.email.value!="") erro = erro + verifica_email(document.formulario.email.value);
+
+      if (erro!="") {
+        mensagem("ERROS DETECTADOS NO FORMULÁRIO:", erro);
+      } else document.formulario.submit();
+}
+
+var pgox = 0;
+function submeter_news() {
+      var erro = "";
+
+      if (document.nl.email.value=="") erro = erro + "Tem que introduzir o email!\n";
+      	else erro = erro + verifica_email(document.nl.email.value);
+
+
+      if (erro!="") {
+          window.alert("ERROS DETECTADOS NO FORMULÁRIO:\n\n" + erro);
+      } else {
+          if (pgox!=0) {
+              document.nl.email.style.display = 'none';
+              document.nl.email.value = pgox.concat(document.nl.email.value);
+              document.nl.submit();
+          }
+      }
+}
+
+function submeter_recuperar() {
+      var erro = "";
+
+      if (document.subrec.email_rec.value=="") erro = erro + "[E-Mail] obrigatório!<br>";
+      	else erro = erro + verifica_email(document.subrec.email_rec.value);
+
+	  if (erro!="") {
+           mensagem("ERROS DETECTADOS NO FORMULÁRIO:", erro);
+      } else document.subrec.submit();
+}
+
+function submeter_recuperar2() {
+      var erro = "";
+
+      if (document.subrec2.codigo_rec.value=="") erro = erro + "[Código de Recuperação] obrigatório!<br>";
+      if (document.subrec2.pass1.value=="") erro = erro + "[Nova Password] obrigatório!<br>";
+         else if (document.subrec2.pass1.value.length < 8) erro = erro + "[Nova Password] deve ter mais de 8 caracteres!<br>";
+      if (document.subrec2.pass2.value=="") erro = erro + "[Reintroduza Password] obrigatório!<br>";
+      if ((document.subrec2.pass1.value) && (document.subrec2.pass2.value) && (document.subrec2.pass1.value != document.subrec2.pass2.value)) erro = erro + "A password que reintroduziu não é igual à do campo [Nova Password]<br>";
+
+	  if (erro!="") {
+         javascript:mensagem("ERROS DETECTADOS NO FORMULÁRIO:", erro);
+      } else document.subrec2.submit();
+}
+
+function submeter_pagamento(num) {
+      var erro = "";
+      var conta = 0;
+      submeteu_alguma_coisa = 1;
+
+	  if (num == 1) {
+      		if (document.registo_pagamento.modo.checked) conta = conta+1;
+      } else {
+	      for(n=0;n<num;n++) {
+	        if (document.registo_pagamento.modo[n].checked) conta = conta+1;
+	      }
+      }
+
+      if (conta == 0) erro = "Seleccione um modo de pagamento!";
+      if (erro!="") {
+        javascript:mensagem('ERROS DETECTADOS NO FORMULÁRIO:',erro);
+      } else document.registo_pagamento.submit();
+}
+
+function verifica_tlm_mbway(campo) {
+	var erroi = "";
+    var re = /^\d+(\.\d+)?$/;
+  	if (!re.test(campo)) erroi = "» Telemóvel inválido! Foram detectados caracteres inválidos<br>";
+         else { if (campo.length!=9) erroi = "» Telemóvel inválido! O Telemóvel deve ter nove digitos<br>"; }
+    return(erroi);
+}
+
+function submeter_pagamento_mbway(num) {
+      var erro = "";
+      var conta = 0;
+      submeteu_alguma_coisa = 1;
+
+	  if (num == 1) {
+      		if (document.registo_pagamento.modo.checked) conta = conta+1;
+      } else {
+	      for(n=0;n<num;n++) {
+	        if (document.registo_pagamento.modo[n].checked) conta = conta+1;
+	      }
+      }
+
+      if (conta == 0) erro = "Seleccione um modo de pagamento!";
+          else {
+              if (!document.registo_pagamento.tlm_mbway.value) erro = "Tem que introduzir o número de telemóvel associado à sua conta bancária com MB Way!";
+                 else erro = verifica_tlm_mbway(document.registo_pagamento.tlm_mbway.value);
+          }
+
+      if (erro!="") {
+        javascript:mensagem('ERROS DETECTADOS NO FORMULÁRIO:',erro);
+      } else document.registo_pagamento.submit();
+}
+
+function submeter_entrega() {
+      var erro = "";
+
+      if (((document.registo_entrega.tipo.value == "333") || (document.registo_entrega.tipo.value == "Recolha")) && (num_contactos_entregas)) {
+         if (!div_entraga_id) erro = erro + "Seleccione um dos locais de recolha";
+      }
+
+      if ((document.registo_entrega.tipo.value == "333") || (document.registo_entrega.tipo.value == "Recolha")) document.registo_entrega.action = "compras_pagamento.php";
+
+      if (document.registo_entrega.tipo.value!="333") {
+          if (document.registo_entrega.tipo.value!="123") {
+			  if ((!document.registo_entrega.tipo[0].checked) && (!document.registo_entrega.tipo[1].checked)) erro = erro + "Seleccione um dos tipos de entrega";
+	          if (document.registo_entrega.tipo[1].checked) {
+                if ((!document.registo_entrega.local[0].checked) && (!document.registo_entrega.local[1].checked)) erro = erro + "Indique o local de entrega pretendido";
+                if (document.registo_entrega.local[0].checked) {
+	                  if (document.registo_entrega.morada.value=="")  erro = erro + "Tem que introduzir a Morada!<br>";
+
+	                  if ((document.registo_entrega.telefone.value=="") && (document.registo_entrega.telemovel.value=="")) erro = erro + "Tem que introduzir pelo menos um contacto telefónico!<br>";
+
+	                  if (document.registo_entrega.telefone.value!="") erro = erro + verifica_contacto(document.registo_entrega.telefone.value,'Telefone');
+
+	                  if (document.registo_entrega.telemovel.value!="") erro = erro + verifica_contacto(document.registo_entrega.telemovel.value,'Telemóvel');
+	            }
+                if (document.registo_entrega.local[1].checked) {
+	                  if (document.registo_entrega.xmorada.value=="")  erro = erro + "Tem que introduzir a Morada!<br>";
+
+	                  if ((document.registo_entrega.xtelefone.value=="") && (document.registo_entrega.xtelemovel.value=="")) erro = erro + "Tem que introduzir pelo menos um contacto telefónico!<br>";
+
+	                  if (document.registo_entrega.xtelefone.value!="") erro = erro + verifica_contacto(document.registo_entrega.xtelefone.value,'Telefone');
+
+	                  if (document.registo_entrega.xtelemovel.value!="") erro = erro + verifica_contacto(document.registo_entrega.xtelemovel.value,'Telemóvel');
+	            }
+	          }
+	      } else {
+            if ((!document.registo_entrega.local[0].checked) && (!document.registo_entrega.local[1].checked)) erro = erro + "Indique o local de entrega pretendido";
+            if (document.registo_entrega.local[0].checked) {
+	              if (document.registo_entrega.morada.value=="")  erro = erro + "Tem que introduzir a Morada!<br>";
+
+	              if ((document.registo_entrega.telefone.value=="") && (document.registo_entrega.telemovel.value=="")) erro = erro + "Tem que introduzir pelo menos um contacto telefónico!<br>";
+
+	              if (document.registo_entrega.telefone.value!="") erro = erro + verifica_contacto(document.registo_entrega.telefone.value,'Telefone');
+
+	              if (document.registo_entrega.telemovel.value!="") erro = erro + verifica_contacto(document.registo_entrega.telemovel.value,'Telemóvel');
+	        }
+            if (document.registo_entrega.local[1].checked) {
+	              if (document.registo_entrega.xmorada.value=="")  erro = erro + "Tem que introduzir a Morada!<br>";
+
+	              if ((document.registo_entrega.xtelefone.value=="") && (document.registo_entrega.xtelemovel.value=="")) erro = erro + "Tem que introduzir pelo menos um contacto telefónico!<br>";
+
+	              if (document.registo_entrega.xtelefone.value!="") erro = erro + verifica_contacto(document.registo_entrega.xtelefone.value,'Telefone');
+
+	              if (document.registo_entrega.xtelemovel.value!="") erro = erro + verifica_contacto(document.registo_entrega.xtelemovel.value,'Telemóvel');
+	        }
+	      }
+      }
+
+      if (erro!="") {
+        javascript:mensagem('ERROS DETECTADOS NO FORMULÁRIO:',erro);
+      } else document.registo_entrega.submit();
+}
+
+function submeter_emails() {
+      var erro = "";
+
+      if ((document.recomenda.emaild1.value=="") && (document.recomenda.emaild2.value=="") && (document.recomenda.emaild3.value=="")) erro = erro + "Tem que introduzir pelo menos um email de destino!\n";
+
+      if (document.recomenda.emaild1.value!="") erro = erro + verifica_email(document.recomenda.emaild1.value);
+
+      if (document.recomenda.emaild2.value!="") erro = erro + verifica_email(document.recomenda.emaild2.value);
+
+      if (document.recomenda.emaild3.value!="") erro = erro + verifica_email(document.recomenda.emaild3.value);
+
+      if (erro!="") {
+        window.alert("ERROS DETECTADOS NO FORMULÁRIO:\n\n" + erro);
+      } else document.recomenda.submit();
+}
+
+if (document.images) {
+    img_cart_on = new Image();
+    img_cart_on.src = "../imagens/cart_on.gif";
+
+    img_cart_off = new Image();
+    img_cart_off.src = "../imagens/cart.gif";
+
+    img_li_on = new Image();
+    img_li_on.src = "../imagens/comprar_lista_on.gif";
+
+    img_li_off = new Image();
+    img_li_off.src = "../imagens/comprar_lista.gif";
+}
+
+function muda_cart(id,pos) {
+	if (pos==1) document.getElementById('cp'+id).src = img_cart_on.src; else document.getElementById('cp'+id).src = img_cart_off.src;
+}
+
+function muda_comprar_lista(id,pos) {
+	if (pos==1) document.getElementById('lp'+id).src = img_li_on.src; else document.getElementById('lp'+id).src = img_li_off.src;
+}

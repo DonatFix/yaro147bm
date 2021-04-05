@@ -1,0 +1,352 @@
+*:focus {
+    outline: 0;
+}
+.provlog1 { font-family:Arial; font-size:32px; color:#747474; letter-spacing:0.03em; margin: 50px 0px 15px; text-align:center; }
+.provlog2 { font-family:Arial; font-size:16px; color:#909090; letter-spacing:0.02em; margin: 0px 0px 60px; text-align:center; }
+.letra1 { font-family:Tahoma; font-size: 10px; color:#DEF2FA; line-height:8pt; text-decoration:none; font-weight:bold }
+.letra1:hover { font-family:Tahoma; font-size: 10px; color :#00FFFF; line-height: 8pt; text-decoration: none; font-weight:bold}
+.letra2 { font-family:Verdana; font-size:10px; color:#000099; line-height:8pt;  text-decoration:none; font-weight:bold}
+.letra2:hover {	font-family: Verdana; font-size:10px; color:#800000; line-height:8pt; text-decoration:none; font-weight:bold}
+.letra3 { font-family: Arial; font-size:11px; color:#000000; line-height: 8pt;  text-decoration: none; font-weight: bold}
+.letra4 { font-family: Tahoma; font-size:9px; color:#8B95C2; line-height: 8pt; text-decoration: none; font-weight: bold}
+.letra5 { font-family: Tahoma; font-size:8px; color:#000000; line-height: 8pt; text-decoration: none; font-weight: bold}
+.letra6 { font-family: Tahoma; font-size:10px; color:#000000; line-height: 8pt; text-decoration: none; font-weight: bold}
+.letra7 { font-family: Verdana;	font-size:9px; color:#FFFFFF; line-height: 9pt; text-decoration: none; font-weight: bold}
+.letra7:hover {	font-family:Verdana; font-size:9px; color:#FFFFFF;  line-height: 9pt; text-decoration: underline; font-weight: bold}
+.letra8 { font-family:Helvetica,Arial; font-size:9px;	color:#544F30;  line-height: 9pt; text-decoration: none;font-weight: bold;}
+.letra9 { font-family:Arial; font-size:16px; color:#000000; line-height: 12pt; text-decoration: none; font-weight: bold}
+.letra10 { font-family:Tahoma; font-size : 10px;	color : #286CB7;  line-height: 8pt;  text-decoration: none; font-weight: bold }
+.letra10:hover { font-family : Tahoma;	font-size : 10px;	color : #CC0000;  line-height: 8pt;  text-decoration: none; font-weight: bold }
+.letra11 {font-family : Tahoma;	font-size : 9px;	color : #829CB3;  line-height: 9pt; text-decoration: none; font-weight: bold}
+.letra12 {font-family : Arial;	font-size : 11px;	color : #000000;  line-height: 9pt; text-decoration: none}
+.letra12:hover {font-family : Arial;	font-size : 11px;	color : #000000;  line-height: 9pt; text-decoration: underline}
+.letra13 {	font-family : Verdana;	font-size : 10px;	color : #544F30;  line-height: 8pt;  text-decoration: none; font-weight: bold }
+.letra14 {font-family : Tahoma;	font-size : 9px;	color : #063479;  line-height: 9pt; text-decoration: none; font-weight: bold}
+.letra14:hover {font-family : Tahoma;	font-size : 9px;	color : #063479;  line-height: 9pt; font-weight: bold;text-decoration: underline}
+.letra15 {	font-family : Tahoma;	font-size : 10px;	color : #CC0000;  line-height: 8pt;  text-decoration: none; font-weight: bold }
+.letra16 {	font-family : Tahoma;	font-size : 10px;	color : #000000;  line-height: 8pt;  text-decoration: none; }
+.letra16:hover {	font-family : Tahoma;	font-size : 10px;	color : #000000;  line-height: 8pt;  text-decoration: underline }
+.letra16q {	font-family:Tahoma;	font-size : 8px; color : #000000;  line-height: 6px;  text-decoration: none; }
+.letra17 { font-family:Tahoma;	font-size : 9px; color : #000000;  line-height: 8pt;  text-decoration: none; font-weight: bold}
+.letra18 { font-family:Helvetica,Arial; font-size: 9px; color : #FFFFFF;  line-height: 9pt; text-decoration: none;font-weight: bold}
+.letra19 { font-family:Helvetica,Arial; font-size: 9px; color : #A6C9E3;  line-height: 8pt; text-decoration: none;font-weight: bold}
+.letra20 { font-family:Helvetica,Arial; font-size: 9px; color : #3578aa;  line-height: 9pt; text-decoration: none;font-weight: bold}
+.letra20:hover { font-family : Helvetica,Arial;	font-size : 9px;	color : #3578aa;  line-height: 9pt; text-decoration: underline;font-weight: bold}
+.letra21 { font-family : Arial;	font-size : 11px;	color : #75682B;  line-height: 8pt;  text-decoration: none; font-weight: bold}
+.letra21:hover { font-family : Arial;	font-size : 11px;	color : #800000;  line-height: 8pt;  text-decoration: underline; font-weight: bold}
+.letra22 { font-family : Verdana;	font-size : 9px;	color : #6C6F60;  line-height: 9pt; font-weight: bold; text-decoration: none}
+.letra22:hover {	font-family : Verdana;	font-size : 9px;	color : #6C6F60;  line-height: 9pt; font-weight: bold; text-decoration: underline}
+.letra23 { font-family : sans-serif,Tahoma;	font-size : 11px;  color : #063479;  line-height: 10pt; font-weight: bold; text-decoration: none}
+.letra23:hover {	font-family : sans-serif,Tahoma;	font-size : 11px;  color : #063479;  line-height: 10pt; font-weight: bold; text-decoration: underline}
+.letra23g {	font-family : sans-serif,Tahoma;	font-size : 12px;  color : #063479;  line-height: 10pt; font-weight: bold; text-decoration: none}
+.letra23g:hover {	font-family : sans-serif,Tahoma, Arial, Helvetica;	font-size : 12px;  color : #063479;  line-height: 10pt; font-weight: bold; text-decoration: underline}
+.letra24 { font-family : Arial, Helvetica; font-size : 14px;  color : #55708A;  line-height: 10pt; text-decoration: none; font-weight: bold;}
+.letra25 { font-family : Helvetica,Arial; font-size : 9px;	color : #988D76;  line-height: 9pt; text-decoration: none;font-weight: bold;}
+.letra26 { font-family : Tahoma,Arial;	font-size : 10px;	color : #C1F4F4;  line-height: 8pt;  text-decoration: none; font-weight: bold }
+.letra26:hover {	font-family : Tahoma;	font-size : 10px;	color : #FFFFFF;  line-height: 8pt; text-decoration: none; font-weight: bold}
+.letra27 {	font-family : Tahoma;	font-size : 10px;	color : #5CFF0F;  line-height: 8pt;  text-decoration: none; font-weight: bold }
+.letra27:hover {	font-family : Tahoma;	font-size : 10px;	color : #5CFF0F;  line-height: 8pt;  text-decoration: underline; font-weight: bold }
+.letra28 {	font-family : Helvetica,Arial;	font-size : 9px;	color : #D7E7F2;  line-height: 8pt; text-decoration: none;font-weight: bold}
+.letra28:hover {	font-family : Helvetica,Arial;	font-size : 9px;	color : #D7E7F2;  line-height: 8pt; text-decoration: underline;font-weight: bold}
+.letra29 {	font-family : Tahoma,sans-serif;	font-size : 8px;	color : #A6C9E3;  line-height: 8pt; text-decoration: none;font-weight: bold}
+.letra30 {	font-family : Helvetica,Arial,Tahoma,sans-serif;	font-size : 9px;	color : #ECE8DF;  line-height: 8pt; text-decoration: none;font-weight: bold}
+.letra31 {	font-family : Arial,sans-serif;	font-size : 9px;	color : #DBDBDB;  line-height: 9pt; text-decoration: none;font-weight: bold}
+.letra31:hover { font-family : Arial;	font-size : 9px;	color : #FFFFFF;  line-height: 9pt; text-decoration: underline;font-weight: bold}
+.letra32 { font-family : Arial;	font-size : 13px;	color : #000000;  line-height: 12pt; text-decoration: none; letter-spacing:0px;word-spacing:0px;}
+.letra33 { font-family:Tahoma;	font-size : 10px;	color : #000000;  line-height: 10px; text-decoration: none; background: #EFEFEF;}
+.letra33:hover { font-family:Tahoma;	font-size : 10px;	color : #000000;  line-height: 10px;  text-decoration: none; background: #D8D8D8;}
+.letra34 { font-family:Tahoma;	font-size : 10px;	color : #000000;  line-height: 12pt; text-decoration: none; background: #EFEFEF;  border: 1px solid #000000;}
+.letra34:hover { font-family : Tahoma;	font-size : 10px;	color : #000000;  line-height: 12pt;  text-decoration: none; background: #D8D8D8;}
+.letra35 { font-family:Tahoma; font-size : 10px;	color : #063479;  line-height: 12pt; text-decoration: none; font-weight: bold; background: #EFEFEF;  border: 1px solid #000000;}
+.letra35:hover { font-family : Tahoma,Arial,Verdana,sans-serif,Helvetica;	font-size : 10px;	color : #063479;  line-height: 12pt;  text-decoration: none; font-weight: bold; background: #D8D8D8;}
+.letra36 { font-family:Tahoma; font-size : 10px;	color : #009700;  line-height: 8pt;  text-decoration: none; }
+.letra37 { font-family:Tahoma; font-size : 10px;	color : #D50000;  line-height: 8pt;  text-decoration: none; }
+.letra38 { font-family:sans-serif,Tahoma;	font-size : 11px;  color : #E45803;  line-height: 10pt; font-weight: bold; text-decoration: none}
+.letra38:hover { font-family : sans-serif,Tahoma;	font-size : 11px;  color : #076AD8;  line-height: 10pt; font-weight: bold; text-decoration: none}
+.letra39 {font-family : Arial,sans-serif,Helvetica;	font-size : 11px;	color : #FFFFFF;  line-height: 9pt; text-decoration: none}
+.letra39:hover {font-family:Arial; font-size:11px; color : #FFFFFF;  line-height: 9pt; text-decoration: underline}
+.letra40 {font-family:Arial; font-size:11px;	color : #645B2D;  line-height: 9pt; text-decoration: none}
+
+.letra41 {	font-family : Arial; font-size : 10px;	color : #5E5F71;  line-height: 10pt; font-weight: bold; text-decoration: none; padding-left:15px; padding-right:15px;}
+.letra42 {	font-family : Arial; font-size : 11px;	color : #5E5F71;  line-height: 10pt; text-decoration: none;font-weight: bold}
+.letra44 {	font-family : Arial; font-size : 11px;	color : #565A63;  line-height: 9pt; text-decoration: none;font-weight: bold;}
+.letra44:hover { color : #000000;  text-decoration: underline; }
+.letra43 {	font-family : Tahoma;	font-size : 9px;	color : #3578aa;  line-height: 11pt; text-decoration: none; background: #FFFFFF;  border: 1px solid #000000; }
+.letra45 {	font-family : Arial; font-size : 11px;	color : #333333;  line-height: 10pt; text-decoration: none; font-weight: bold;}
+.letra45:hover { color : #4887EE; }
+.letra46 {	font-family : Arial; font-size : 10px;	color : #808195;  line-height: 9pt; text-decoration: none}
+.letra47 {	font-family : Arial; font-size : 16px;	color : #000000;  line-height: 12pt;  text-decoration: none; font-weight: bold;}
+.letra48 {	font-family : Arial; font-size : 12px;	color : #606277;  line-height: 13pt; text-decoration: none; }
+
+.letra49 {	font-family : Arial,sans-serif,Helvetica;	font-size : 11px;	color : #000000;  line-height: 10pt; text-decoration: none}
+.letra49:hover {	font-family : Arial,sans-serif,Helvetica;	font-size : 11px;	color : #000000;  line-height: 10pt; text-decoration: underline}
+.letra50 {	font-family : Verdana,sans-serif,Helvetica;	font-size : 10px;	color : #000000;  line-height: 10pt; text-decoration: none}
+.letra50:hover {	font-family : Verdana,sans-serif,Helvetica;	font-size : 10px;	color : #000000;  line-height: 10pt; text-decoration: underline}
+.letra51 {	font-family : Verdana;	font-size : 11px;	color : #000000;  line-height: 10pt; text-decoration: none}
+.letra51:hover {	font-family : Verdana;	font-size : 11px;	color : #000000;  line-height: 10pt; text-decoration: underline}
+.letra52 {	font-family : Verdana;	font-size : 12px;	color : #000000;  line-height: 10pt; text-decoration: none}
+.letra52:hover {	font-family : Verdana;	font-size : 12px;	color : #000000;  line-height: 10pt; text-decoration: underline}
+.letra53 {	font-family : Tahoma;	font-size : 10px;	color : #CCCCCC;  line-height: 8pt;  text-decoration: none; font-weight: bold }
+.letra53:hover {	font-family : Tahoma;	font-size : 10px;	color : #64B1FF;  line-height: 8pt; text-decoration: none; font-weight: bold}
+.letra54 {	font-family : Arial;	font-size : 14px;	color : #000000;  line-height: 14pt; text-decoration: none; font-weight: bold}
+.letra55 {font-family : Arial;	font-size : 11px;	color : #286CB7;  line-height: 9pt; text-decoration: none}
+.letra55:hover {font-family:Arial; font-size:11px; color:#A30C1B;  line-height: 9pt; text-decoration: none}
+
+.letra10s {	font-family:Tahoma;	font-size:10px;	color:#286CB7; line-height:8pt; text-decoration: none; font-weight: bold }
+.letra45s {	font-family:Arial; font-size:12px; color:#333333; line-height:12pt; text-decoration: none; font-weight: bold;}
+.letra31s {	font-family:Arial; font-size:9px; color:#DBDBDB; line-height:9pt; text-decoration: none;font-weight: bold}
+.letra23s {	font-family:sans-serif,Tahoma; font-size:12px; color:#063479; line-height: 10pt; font-weight: bold; text-decoration: none}
+.letra20s {	font-family:Helvetica; font-size:9px; color:#3578aa; line-height: 9pt; text-decoration: none;font-weight: bold}
+.letra12s { font-family:Arial; font-size:11px; color:#000000; line-height:9pt; text-decoration: none}
+.letra16s {	font-family:Tahoma;	font-size:10px;	color:#000000; line-height:8pt;  text-decoration: none; }
+.letra23s {	font-family:sans-serif;	font-size:11px;  color : #063479;  line-height: 10pt; font-weight: bold; text-decoration: none}
+.letra12ss { font-family:Arial; font-size:11px; line-height:11pt; color:#404040; text-decoration: none}
+.letra12sss { font-family:Arial; font-size:11px; line-height:12pt; color:#404040; text-decoration: none; margin-bottom:20px;}
+.texto37s {	font-family :Verdana; font-size:9px; color:#E45803; line-height: 9pt; font-weight: bold; text-decoration: none}
+.texto25s {	font-family : Verdana; font-size : 9px;	color : #000000;  line-height: 9pt; font-weight: bold; text-decoration: none}
+.letra22s { font-family : Verdana;	font-size : 9px;	color : #6C6F60;  line-height: 9pt; font-weight: bold; text-decoration: none}
+.letra23x {	font-family:Arial;	font-size:12px;  line-height: 10pt; font-weight: bold; }
+.lispr {	font-family : Helvetica;	font-size : 12px;	color : #7D7D7D;  line-height: 10pt; text-decoration: line-through; }
+.lis_nome { font-family : Arial;	font-size : 12px;	color : #565A63;  line-height: 10pt; font-weight: bold; text-decoration: none; margin-top:0px; margin-bottom: 0px;}
+.lis_nome:hover { font-family : Arial;	font-size : 12px;	color : #000000;  line-height: 10pt; font-weight: bold; text-decoration: none; margin-top:0px; margin-bottom: 0px;}
+.lis_desc { font-family : Arial;	font-size : 11px;	color : #8E939D;  line-height: 10pt; font-weight: bold; text-decoration: none; margin-top:2px; margin-bottom: 0px;}
+.lis_preco {	font-family : Arial;	font-size : 16px;	color : #000000;  line-height: 14pt; text-decoration: none; font-weight: bold}
+.boxhi { height:134px; overflow: hidden; text-overflow: ellipsis; }
+.boxhi2 { height:142px; overflow:hidden; text-overflow: ellipsis; }
+.lis_box { width:180px; height:180px; cursor:pointer; background-repeat: no-repeat; background-position: center; }
+.lis_empty { width:180px; height:26px; background-color: #F5F5F5; }
+
+.menup { font-family: Tahoma; font-size: 11px; color:#000000; line-height: 8pt; font-weight: bold}
+.menus { font-family: Tahoma; font-size: 10px; color : #000000; line-height: 8pt; font-weight: bold; text-decoration: none}
+.menus:hover {	font-family : Tahoma,Arial;	font-size : 10px;	color : #000000;  line-height: 8pt; font-weight: bold; text-decoration: none}
+.letra12a {	font-size: 11px; line-height: 9pt; 	color: #404040;     font-family : Arial; text-decoration: none}
+.letra12a:hover {	font-size: 11px;     line-height: 9pt; 	color: #076AD8;     font-family : Arial; text-decoration: none}
+.letra12x {	font-size: 12px; line-height: 13pt; 	color: #404040;     font-family : Arial; }
+.letra12xa {	font-size: 12px; line-height: 13pt; 	color: #404040;     font-family : Arial; text-decoration: none}
+.letra12xa:hover {	font-size: 12px;     line-height: 13pt; 	color: #076AD8;     font-family : Arial; text-decoration: none}
+
+.letra21a {	font-size: 9px;    line-height: 8pt;	color: #000000;    font-family : Helvetica;    font-weight: bold;}
+.texto7a {	font-family : Tahoma;    font-size : 9px;    color : #E45803;    line-height: 9pt;    font-weight: bold; }
+
+.texto { font-family: Arial, Verdana, Sans-serif;   font-size: 0.9em;  color:#666666; }
+.textox1 { font-family: Arial, Verdana, Sans-serif;   font-size: 1em;  color:#666666; }
+.textox2 { font-family: Arial, Verdana, Sans-serif;   font-size: 1.1em;  color:#666666; }
+
+.texto1 { font-family:Tahoma; font-size:11px; color : #000000; line-height: 9pt}
+.texto2 { font-family:Tahoma; font-size:10px; color : #000000; line-height:9pt; font-weight:bold; text-decoration:none}
+.texto2:hover {	font-family : Tahoma;	font-size : 10px;	color : #800000;  line-height: 9pt;font-weight: bold; text-decoration: none}
+.texto3 {	font-family : Tahoma;	font-size : 11px;	color : #828282;  line-height: 9pt}
+.texto4 {	font-family : Verdana;	font-size : 10px;	color : #000000;  line-height: 9pt; }
+.texto4:hover {	font-family : Verdana;	font-size : 10px;	color : #0446b5;  line-height: 9pt;}
+.texto5 {	font-family : Arial;	font-size : 10px;	color : #000000;  line-height: 8pt; text-decoration: none;}
+.texto5:hover {	font-family : Arial;	font-size : 10px;	color : #000000;  line-height: 8pt; text-decoration: underline;}
+.texto6 {	font-family : Tahoma;	font-size : 11px;	color : #FFC68C;  line-height: 9pt; font-weight: bold }
+.texto7 {	font-family : Tahoma;	font-size : 11px;	color : #FFFFFF;  line-height: 9pt; }
+.texto8 {	font-family : Verdana;	font-size : 10px;	color : #FFFFFF;  line-height: 9pt; font-weight: bold}
+.texto9 {	font-family : Tahoma,Arial,Verdana,sans-serif,Helvetica;	font-size : 11px;	color : #000000;  line-height: 9pt; font-weight: bold; text-decoration: none}
+.texto9:hover {	font-family : Tahoma,Arial,Verdana,sans-serif,Helvetica;	font-size : 11px;	color : #1F1F7C;  line-height: 9pt; font-weight: bold; text-decoration: none}
+.texto10 {	font-family : Tahoma;	font-size : 10px;	color : #8E9EBB;  line-height: 9pt}
+.texto10r {	font-family : Tahoma;	font-size : 10px;	color : #8E9EBB;  line-height: 9pt; text-decoration: line-through; }
+.texto11 {	font-family : Tahoma;	font-size : 10px;	color : #0446B5;  line-height: 8pt; font-weight: bold; text-decoration: none}
+.texto11:hover {	font-family : Tahoma;	font-size : 10px;	color : #000080;  line-height: 8pt; font-weight: bold; text-decoration: none}
+.texto12 {	font-family : sans-serif,Tahoma;	font-size : 11px;  color : #000000;  line-height: 10pt; text-decoration: none}
+.texto12:hover {	font-family : sans-serif,Tahoma;	font-size : 11px;  color : #800000;  line-height: 10pt; text-decoration: none}
+.texto12a {	font-family : sans-serif,Tahoma;	font-size : 11px;  color : #000000;  line-height: 10pt}
+.texto12a:hover {	font-family : sans-serif,Tahoma;	font-size : 11px;  color : #000000;  line-height: 10pt}
+.texto13 {	font-family : sans-serif,Tahoma;	font-size : 11px;  color : #6B6B6B;  line-height: 10pt; font-weight: bold; text-decoration: none; }
+.texto13:hover {	font-family : sans-serif,Tahoma, Arial, Helvetica;	font-size : 11px;  color : #F40000;  line-height: 10pt; font-weight: bold; text-decoration: none; }
+.texto14 {	font-family : Arial, Tahoma, Helvetica;	font-size : 12px;  color : #586F94;  line-height: 11pt; text-decoration: none; font-weight: bold; }
+.texto14:hover {	font-family : Arial, Tahoma, Helvetica;	font-size : 12px;  color : #CA0005;  line-height: 11pt; text-decoration: none; font-weight: bold; }
+.texto15 {	font-family : Tahoma,Arial, Helvetica;	font-size : 11px;  color : #4E7DAD;  line-height: 10pt; text-decoration: none}
+.texto15:hover {  color : #CC3300; }
+.texto16 {	font-family : Tahoma;	font-size : 11px;	color : #BEDAFC;  line-height: 9pt; font-weight: bold; text-decoration: none; }
+.texto16:hover { color:#ffffff; }
+.texto17 {	font-family : Tahoma;	font-size : 11px;	color : #D7DBEA;  line-height: 9pt; font-weight: bold }
+.texto18 {	font-family : Tahoma;	font-size : 11px;	color : #000080;  line-height: 9pt; font-weight: bold; font-weight: bold; text-decoration: none }
+.texto18:hover { color:#0446B5; }
+.texto19 {	font-family : Tahoma;	font-size : 11px;	color : #6F6F73;  line-height: 9pt; font-weight: bold; text-decoration: none}
+.texto19:hover { color:#1F1F7C;  }
+.texto20 {	font-family : sans-serif,Tahoma;	font-size : 11px;  color : #000000;  line-height: 10pt; font-weight: bold; text-decoration: none}
+.texto20:hover { color:#0446B5; }
+.texto21 {	font-family : Tahoma,Arial,Verdana,sans-serif,Helvetica;	font-size : 10px;	color : #828282;  line-height: 9pt; font-weight: bold;}
+.texto22 {	font-family : Arial,Verdana,sans-serif,Helvetica;	font-size : 11px;	color : #FFFFFF;  line-height: 9pt; font-weight: bold;text-decoration: none}
+.texto22:hover { color:#BEDAFC; }
+.texto23 {	font-family : Verdana;	font-size : 10px;	color : #000000;  line-height: 9pt; font-weight: bold}
+.texto24 {	font-family : Verdana;	font-size : 9px;	color : #000000;  line-height: 9pt; }
+.texto24:hover { color : #0446B5; }
+.texto25 {	font-family : Verdana;	font-size : 9px;	color : #000000;  line-height: 9pt; font-weight: bold; text-decoration: none}
+.texto25:hover {  color : #000080; }
+.texto26 {	font-family : Arial;	font-size : 9px;	color : #FFFFFF;  line-height: 9pt; }
+.texto27 {	font-family : Arial;	font-size : 18px;	color : #000000;  line-height: 9pt; font-weight: bold}
+.texto28 {	font-family : Verdana;	font-size : 9px;	color : #ffffff;  line-height: 9pt; font-weight: bold; text-decoration: none}
+.texto29 {	font-family : sans-serif,Tahoma, Arial, Helvetica;	font-size : 11px;  color : #FF0000;  line-height: 10pt; text-decoration: none}
+.texto30 {	font-family : sans-serif,Tahoma, Arial, Helvetica;	font-size : 11px;  color : #800000;  line-height: 10pt; text-decoration: none}
+.texto31 {	font-family : Verdana,Tahoma,Arial, Helvetica;	font-size : 16px;  color : #000000;  line-height: 10pt; text-decoration: none}
+.texto32 {	font-family : Arial, Helvetica;	font-size : 14px;  color : #000000;  line-height: 10pt; text-decoration: none; font-weight: bold;}
+.texto33 {	font-family : Tahoma,Arial,Verdana,sans-serif,Helvetica;	font-size : 13px;	color : #6F6F73;  line-height: 9pt; font-weight: bold; text-decoration: none; letter-spacing:1px}
+.texto34 {	font-family : Arial;	font-size : 16px;	color : #FFFFFF;  line-height: 12pt;  text-decoration: none; font-weight: bold}
+.texto35 {	font-family : Arial;	font-size : 16px;	color : #76ACD3;  line-height: 12pt;  text-decoration: none; font-weight: bold}
+.texto36 {	font-family : Verdana;	font-size : 9px;	color : #076AD8;  line-height: 9pt; font-weight: bold; text-decoration: none}
+.texto36:hover { color : #076AD8;  text-decoration: underline; }
+.texto37 {	font-family : Verdana;	font-size : 9px;	color : #E45803;  line-height: 9pt; font-weight: bold; text-decoration: none}
+.texto37:hover { color : #E45803; text-decoration: underline; }
+.texto38 {	font-family : Arial;	font-size : 16px;	color : #55708A;  line-height: 14pt;  text-decoration: none; font-weight: bold}
+.texto39 {	font-family : Tahoma;	font-size : 11px;	color : #FFFFFF;  line-height: 9pt; font-weight: bold;text-decoration: none}
+.texto39:hover { color:#BEDAFC;  text-decoration: underline; }
+.texto40 {	font-family : Arial;	font-size : 16px;	color : #777144;  line-height: 12pt;  text-decoration: none; font-weight: bold}
+.texto41 {	font-family : Verdana;	font-size : 9px;	color : #CC0000;  line-height: 9pt; font-weight: bold; text-decoration: none}
+.texto42 {	font-family : Arial;	font-size : 16px;	color : #000000;  line-height: 12pt;  text-decoration: none; font-weight: bold}
+.texto43 {	font-family : Helvetica;	font-size : 18px;	color : #FFFFFF;  line-height: 14pt;  text-decoration: none; font-weight: bold}
+.texto44 {	font-family : Arial;	font-size : 14px;	color : #CD633C;  line-height: 12pt;  text-decoration: none; font-weight: bold}
+.texto45 {	font-family : Tahoma,Arial, Helvetica;	font-size : 11px;  color : #FFFFFF;  line-height: 10pt; text-decoration: none}
+.texto45:hover { color : #FFDA46; }
+.texto46 {	font-family : Arial;	font-size : 24px;	color : #FFFFFF;  line-height: 14pt;  text-decoration: none; font-weight: bold}
+.texto60 { font-family:Arial; font-size : 15px; color:#FFFFFF;  line-height: 18pt;  text-decoration: none;  letter-spacing:0.04em; margin:-30px 0px -20px; border:1px solid #6E6E6E; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
+
+teste {
+	color: #000000;
+	font-variant: small-caps;
+
+	text-decoration:none;
+	font-family: arial;
+	font-size: 11px;
+	line-height:11px;
+	}
+
+
+TEXTAREA {border: 1px solid #B4B4B4; FONT-WEIGHT: normal; FONT-SIZE: 7pt; BACKGROUND: #ffffff; OVERFLOW: auto; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.imagem {border:1px; border-thickness:1px; border-color: #000000; border-style: solid;}
+.imagem2 {border:1px; border-thickness:1px; border-color: #A34206; border-style: solid;}
+.checkbox{ display: block; padding:0; height: 12px; width: 12px; color: #fff; font-size: 12pt; outline:0; }
+.input {padding-left:5px; height: 16px; font-size: 11px; font-family: arial; border: 1px solid #ABAEBE}
+.input2 {height: 24px; font-size: 12px; font-family: arial; border: 1px solid #B4B4B4; padding:0px 8px; color: #333333; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+.select { padding: 4px 3px; margin: 0px 0px; font-size:12px; font-family: Arial; background-color:#ffffff; color:#000000; border:1px solid #ABAEBE; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+
+.escolha{
+  display: block;
+  padding:0;
+  height: 11px;
+  width: 11px;
+  color: #fff;
+  font-size: 12pt;
+  outline:0;
+}
+
+.txtt1 {	font-family : Arial;	font-size : 11px;	color : #000000;  line-height: 8pt;  text-decoration: none; font-weight: bold}
+.txtt2 {	font-family : Tahoma;	font-size : 10px;	color : #000000;  line-height: 8pt; text-decoration: none; font-weight: bold}
+.txtt3 {	font-family : Helvetica,Arial;	font-size : 9px;	color : #544F30;  line-height: 9pt; text-decoration: none;font-weight: bold;}
+.txtt4 {	font-family : Tahoma;	font-size : 10px;	color : #286CB7;  line-height: 8pt;  text-decoration: none; font-weight: bold }
+.txtt5 {font-family : Tahoma;	font-size : 9px;	color : #063479;  line-height: 9pt; text-decoration: none; font-weight: bold}
+.txtt6 {	font-family : sans-serif,Tahoma, Arial, Helvetica;	font-size : 11px;  color : #000000;  line-height: 10pt; text-decoration: none}
+.txtt7 {	font-family : sans-serif,Tahoma, Arial, Helvetica;	font-size : 11px;  color : #6B6B6B;  line-height: 10pt; text-decoration: none}
+.txtt8 {	font-family : sans-serif,Tahoma, Arial, Helvetica;	font-size : 11px;  color : #000000;  line-height: 10pt; font-weight: bold; text-decoration: none}
+.txtt9 {	font-family : Tahoma,Arial,Verdana,sans-serif,Helvetica;	font-size : 10px;	color : #CC0000;  line-height: 8pt;  text-decoration: none; font-weight: bold }
+
+.cell_out {  background-image: url(../imagens/comprar.gif); }
+.cell_over {  background-image: url(../imagens/comprar_on.gif); }
+
+#lightbox{ background-color:#eee; padding: 10px; border-bottom: 2px solid #666;	border-right: 2px solid #666; }
+#lightboxDetails{ font-family: Arial; font-size: 0.8em;	padding-top: 0.4em; }
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both; }
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(../comum/overlay.png); }
+
+html, body
+{
+  height: 100%; width: 100%; margin:0px; padding:0px; top: 0; left: 0; right: 0; bottom: 0;
+}
+
+* html #overlay{
+	background-color: #333;
+	back\ground-color: transparent;
+	background-image: url(../imagens/ponto.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../comum/overlay.png", sizingMethod="scale");
+	}
+
+kbd{
+	color: #555;
+	background-color: #ddd;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	font-size: inherit;
+	font-family: inherit;
+	padding: 0 3px 2px 4px;
+	font-weight: bold;
+    font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+
+	}
+
+.p1{ margin:0px; }
+.p2{ margin:2px 0px; }
+.p5{ margin:5px 0px; }
+.p0p5 { margin: 0px 0px 5px; }
+.p0p10 { margin: 0px 0px 10px; }
+.p0p15 { margin: 0px 0px 15px; }
+.p5p0 { margin: 5px 0px 0px; }
+.p7p0 { margin: 7px 0px 0px; }
+.p10p5 { margin:10px 0px 5px; }
+.p10p0 { margin:10px 0px 0px; }
+.p15p0 { margin:15px 0px 0px; }
+.p0_1 { margin:0px 0px 1px; }
+.p8{ margin:8px 0px; }
+.p10{ margin:10px 0px; }
+.p15{ margin:15px 0px; }
+.p6p4{ margin:6px 0px 4px; }
+.p8p20{ margin:8px 0px 20px; }
+.p0p1{ margin: -4px 0px 1px; }
+.mle20 { margin-left: 20px; }
+.mle10 { margin-left: 10px; }
+.mle3 { margin-left: 3px; }
+
+.goog-tooltip {
+    display: none !important;
+}
+.goog-tooltip:hover {
+    display: none !important;
+}
+.goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.goog-te-banner-frame.skiptranslate {display: none !important;}
+body { top: 0px !important; left:0px; margin:0px; }
+
+.mv1 { margin: 6px 5px 6px 9px; }
+.mv2 { position:relative; width:160px; padding:0px; left:0px; top:0px; bottom:0px; text-align:left; }
+.mv3 { position:relative; width:145px; padding:0px; left:15px; top:0px; bottom:0px; }
+
+.ctsred3 { border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+.ctsred4 { border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+.ctsred { border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.ctsred2 { border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
+
+.back-to-top { position: fixed; bottom: 2em; right: 0px; text-decoration: none; color: #000000; font-size: 12px; padding: 1em 2em; display: none; opacity: 0.5; filter: alpha(opacity=50); }
+.back-to-top:hover { opacity: 0.8; filter: alpha(opacity=80); }
+
+.tabdfp { height:24px; background-color:#ffffff; cursor:pointer;}
+.tabdfp:hover { background-color:#F0F0F0; }
+
+.ibl { display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline; }
+
+.sitebx { visibility:hidden; }                  
+
+.pashow { padding:10px 10px; border-bottom:1px #CFCFCF dotted; font-size:15px; width:95%; display:inline-block; }
+.pashow:hover {	background:#EAEAEA;	cursor:pointer;	}
+.lispa_nome { font-family:Arial; font-size:13px; color: #616161;  line-height: 14pt; font-weight: bold; text-decoration: none; margin:0px; }
+.lispa_desc { font-family:Helvetica; font-size:12px; color: #838383;  letter-spacing:0.02em; line-height: 12pt; font-weight: normal; text-decoration: none; margin-top:3px; margin-bottom: 0px;}
+
+.fade {
+  position: absolute;
+  top: 100px
+  left: 100px
+}
+.fade div {  position: absolute; top: 0; left: 0; display: none; }

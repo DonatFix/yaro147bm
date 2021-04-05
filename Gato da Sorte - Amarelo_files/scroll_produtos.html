@@ -1,0 +1,355 @@
+
+<!-- saved from url=(0053)https://www.bairroarte.com/blocos/scroll_produtos.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Bairro Arte</title>
+<script type="text/javascript" src="./jquery-1.8.3.min.js.download"></script>
+<script type="text/javascript" src="./jquery-translate.js.download"></script>
+<script type="text/javascript" src="./vertical.js.download"></script>
+<script type="text/javascript" src="./scripts.js.download"></script>
+<style type="text/css">
+    .btspath_fundo { margin:0px 0px 0px;background-image:url(../imagens/bgt.png);border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+    .btspath_fundo_int { display:inline-block; padding:0px 15px; }
+    .hcletra { font-family: Arial; font-size:13px;	line-height:14pt; color:#FF6F00;  font-weight: bold; text-decoration: none; margin:10px 5px 0px; }
+    .hcletrap { font-family: Arial; font-size:12px; line-height:12pt; color:#FF6F00;  font-weight: bold; text-decoration: none; margin:10px 5px 0px; }
+    .hcletra:hover,.hcletrap:hover { color : #030100; }
+
+div .scrollpesq::-webkit-scrollbar { width: 10px; }
+div .scrollpesq::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+div .scrollpesq::-webkit-scrollbar-thumb { background: #303030; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+div .scrollpesq::-webkit-scrollbar-thumb:hover { background: #FF9A17; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+
+.ypesq1 {
+	background-color:#FFFFFF; color:#2D2E40; padding:7px 10px 7px; margin:0px;
+    border: 1px solid #303030; border-right: 0px; font-size: 13px; font-family: Arial; height:14px; letter-spacing:0.02em;
+        border-top-left-radius: 5px; border-bottom-left-radius: 5px; -moz-border-radius-topleft:5px; -moz-border-radius-bottomleft:5px;  -webkit-border-top-left-radius 5px; -webkit-border-bottom-left-radius 5px;
+	}
+
+.ypesq2 {
+	border: 1px solid #303030; background-color:#303030; height:28px; width:28px; cursor:pointer; border-left:0px; text-align:center;
+        border-top-right-radius: 5px; border-bottom-right-radius: 5px; -moz-border-radius-topright:5px; -moz-border-radius-bottomright:5px; -webkit-border-top-right-radius 5px; -webkit-border-bottom-right-radius 5px;
+	     margin:0px; -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+}
+.ypesq2:hover { background-color:#FF9A17; border: 1px solid #FF9A17; border-left:0px; }
+.seta_pesquisa { border-top: 6px solid transparent; border-left: 6px solid #FFFFFF; border-bottom: 6px solid transparent; margin:8px 12px; }
+.ypesqa {
+		border: 1px solid #303030; background-color:#303030; cursor:pointer; letter-spacing:0.02em;
+    font-size: 11px; font-family: Arial; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; padding: 9px 11px;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: #FFFFFF;
+     margin:0px;
+}
+.ypesqa:hover { background-color:#FF9A17; border: 1px solid #FF9A17; }
+
+.ypath {
+	border: 1px solid #303030; background-color:#303030; cursor:pointer; font-family: Arial; margin:0px; padding:9px 11px;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: #FFFFFF; letter-spacing:0.02em;
+     -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+}
+.ypath:hover { color:#FFB026; background-color:#303030; border: 1px solid #303030; }
+
+
+
+.lista_cab1 {
+	text-align:left; padding: 14px 12px; border:1px solid #EDEDED; background-color:#EDEDED;
+    font-family:Helvetica; font-size: 26px; color:#55708A; line-height:28pt; text-decoration:none; font-weight:normal; margin-bottom:1px; letter-spacing:0.02em;
+}
+
+.btlout { text-decoration:none; }
+
+.etidx {border-radius: 50%;		display: inline-block; margin:9px; font-family:Tahoma; font-size:10px; line-height:23px; padding:0px 7px; background-color:#FFD900; border:1px solid #FFD900; color:#000000;		 box-shadow: 0px 0px 3px #000000;	   }
+
+#paresult { position:absolute; padding:10px 10px 10px 10px; display:none;
+	margin-top:3px;	border-top:0px;	overflow-x:hidden; overflow-y:hidden; border:1px #303030 solid; background-color: white; height:350px; z-index:100000;
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+ul { list-style-type: none; }
+.blis_nome { font-family : Arial;	font-size : 13px; line-height:14pt; color:#565A63; font-weight: bold; text-decoration:none; margin:0px 5px; }
+.blis_nomep { font-family : Arial;	font-size : 12px; line-height:12pt;	color:#565A63; font-weight: bold; text-decoration:none; margin:0px 5px; }
+.blis_nome:hover, .blis_nomep:hover { color:#000000; }
+.letra24 { font-family : Arial, Helvetica; font-size : 15px;  color : #55708A;  line-height: 10pt; text-decoration: none; font-weight: bold;}
+.letra38 { font-family:sans-serif,Tahoma; font-size:11px; color:#E45803;  line-height: 10pt; font-weight: bold; text-decoration: none}
+.texto10r {	font-family:Tahoma;	font-size:10px;	color:#8E9EBB; line-height: 9pt; text-decoration: line-through; }
+</style>
+</head>
+
+<body topmargin="0px" leftmargin="0px" rightmargin="0px" bottommargin="0px" bgcolor="#F2F2F2">
+	<div class="myclass" style="overflow: hidden; position: relative; height: 290px;">
+	<ul style="position: absolute; margin: 0px; padding: 0px; top: 0px;">
+            
+            
+            
+            
+            
+            
+            
+            <li style="margin: 0px; padding: 0px; height: 290px; display: list-item;">
+			<table border="0" width="180" height="290" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td height="180" width="180" style="cursor:pointer; background-repeat: no-repeat; background-position: center;" title="Ver Mais" onclick="top.location.href=&#39;../info/ver_produtos.php?id=5783&#39;" background="./lista_5783.jpg" valign="top">
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="75" align="center" valign="middle">
+                        <p class="blis_nome"><a target="_top" class="blis_nome" href="https://www.bairroarte.com/info/ver_produtos.php?id=5783">Candeeiro suspenso Macaco dourado Dave</a></p>
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="35" align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+				            <tbody><tr>
+	        			        <td align="center">
+	                       			<p style="margin-top: 0px; margin-bottom: 0" class="letra24"><font color="#546378">€ 179,00</font></p>
+												                    </td>
+				                <td width="10"></td>
+				                <td bgcolor="#CBCDDE" width="1"></td>
+				                <td width="40" align="center"><a target="_top" href="javascript:parent.abre_carrinho(5783)"><img alt="Adicionar ao Carrinho" border="0" src="./cart.gif" width="20" height="20" id="cp5783" name="cp5783" onmouseover="javascript:muda_cart(&#39;5783&#39;,1);" onmouseout="javascript:muda_cart(&#39;5783&#39;,0);"></a></td>
+				            </tr>
+				        </tbody></table>                    </td>
+                </tr>
+            </tbody></table>
+			</li>
+            <li style="margin: 0px; padding: 0px; height: 290px;">
+			<table border="0" width="180" height="290" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td height="180" width="180" style="cursor:pointer; background-repeat: no-repeat; background-position: center;" title="Ver Mais" onclick="top.location.href=&#39;../info/ver_produtos.php?id=5767&#39;" background="./lista_5767.jpg" valign="top">
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="75" align="center" valign="middle">
+                        <p class="blis_nome"><a target="_top" class="blis_nome" href="https://www.bairroarte.com/info/ver_produtos.php?id=5767">Gato da Sorte - Preto L</a></p>
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="35" align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+				            <tbody><tr>
+	        			        <td align="center">
+	                       			<p style="margin-top: 0px; margin-bottom: 0" class="letra24"><font color="#546378">€ 69,00</font></p>
+												                    </td>
+				                <td width="10"></td>
+				                <td bgcolor="#CBCDDE" width="1"></td>
+				                <td width="40" align="center"><a target="_top" href="javascript:parent.abre_carrinho(5767)"><img alt="Adicionar ao Carrinho" border="0" src="./cart.gif" width="20" height="20" id="cp5767" name="cp5767" onmouseover="javascript:muda_cart(&#39;5767&#39;,1);" onmouseout="javascript:muda_cart(&#39;5767&#39;,0);"></a></td>
+				            </tr>
+				        </tbody></table>                    </td>
+                </tr>
+            </tbody></table>
+			</li>
+            <li style="margin: 0px; padding: 0px; height: 290px;">
+			<table border="0" width="180" height="290" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td height="180" width="180" style="cursor:pointer; background-repeat: no-repeat; background-position: center;" title="Ver Mais" onclick="top.location.href=&#39;../info/ver_produtos.php?id=5758&#39;" background="./lista_5758.jpg" valign="top">
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="75" align="center" valign="middle">
+                        <p class="blis_nome"><a target="_top" class="blis_nome" href="https://www.bairroarte.com/info/ver_produtos.php?id=5758">Garrafa de Àgua VW - Bordeaux</a></p>
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="35" align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+				            <tbody><tr>
+	        			        <td align="center">
+	                       			<p style="margin-top: 0px; margin-bottom: 0" class="letra24"><font color="#546378">€ 13,00</font></p>
+												                    </td>
+				                <td width="10"></td>
+				                <td bgcolor="#CBCDDE" width="1"></td>
+				                <td width="40" align="center"><a target="_top" href="javascript:parent.abre_carrinho(5758)"><img alt="Adicionar ao Carrinho" border="0" src="./cart.gif" width="20" height="20" id="cp5758" name="cp5758" onmouseover="javascript:muda_cart(&#39;5758&#39;,1);" onmouseout="javascript:muda_cart(&#39;5758&#39;,0);"></a></td>
+				            </tr>
+				        </tbody></table>                    </td>
+                </tr>
+            </tbody></table>
+			</li>
+	<li style="margin: 0px; padding: 0px; height: 290px;">
+			<table border="0" width="180" height="290" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td height="180" width="180" style="cursor:pointer; background-repeat: no-repeat; background-position: center;" title="Ver Mais" onclick="top.location.href=&#39;../info/ver_produtos.php?id=5830&#39;" background="./lista_5830.jpg" valign="top">
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="75" align="center" valign="middle">
+                        <p class="blis_nome"><a target="_top" class="blis_nome" href="https://www.bairroarte.com/info/ver_produtos.php?id=5830">Caneca azul com gato</a></p>
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="35" align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+				            <tbody><tr>
+	        			        <td align="center">
+	                       			<p style="margin-top: 0px; margin-bottom: 0" class="letra24"><font color="#546378">€ 19,99</font></p>
+												                    </td>
+				                <td width="10"></td>
+				                <td bgcolor="#CBCDDE" width="1"></td>
+				                <td width="40" align="center"><a target="_top" href="javascript:parent.abre_carrinho(5830)"><img alt="Adicionar ao Carrinho" border="0" src="./cart.gif" width="20" height="20" id="cp5830" name="cp5830" onmouseover="javascript:muda_cart(&#39;5830&#39;,1);" onmouseout="javascript:muda_cart(&#39;5830&#39;,0);"></a></td>
+				            </tr>
+				        </tbody></table>                    </td>
+                </tr>
+            </tbody></table>
+			</li><li style="margin: 0px; padding: 0px; height: 290px; display: list-item;">
+			<table border="0" width="180" height="290" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td height="180" width="180" style="cursor:pointer; background-repeat: no-repeat; background-position: center;" title="Ver Mais" onclick="top.location.href=&#39;../info/ver_produtos.php?id=5827&#39;" background="./lista_5827.jpg" valign="top">
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="75" align="center" valign="middle">
+                        <p class="blis_nome"><a target="_top" class="blis_nome" href="https://www.bairroarte.com/info/ver_produtos.php?id=5827">Gato da Sorte - Branco L</a></p>
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="35" align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+				            <tbody><tr>
+	        			        <td align="center">
+	                       			<p style="margin-top: 0px; margin-bottom: 0" class="letra24"><font color="#546378">€ 69,00</font></p>
+												                    </td>
+				                <td width="10"></td>
+				                <td bgcolor="#CBCDDE" width="1"></td>
+				                <td width="40" align="center"><a target="_top" href="javascript:parent.abre_carrinho(5827)"><img alt="Adicionar ao Carrinho" border="0" src="./cart.gif" width="20" height="20" id="cp5827" name="cp5827" onmouseover="javascript:muda_cart(&#39;5827&#39;,1);" onmouseout="javascript:muda_cart(&#39;5827&#39;,0);"></a></td>
+				            </tr>
+				        </tbody></table>                    </td>
+                </tr>
+            </tbody></table>
+			</li><li style="margin: 0px; padding: 0px; height: 290px; display: list-item;">
+			<table border="0" width="180" height="290" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td height="180" width="180" style="cursor:pointer; background-repeat: no-repeat; background-position: center;" title="Ver Mais" onclick="top.location.href=&#39;../info/ver_produtos.php?id=5803&#39;" background="./lista_5803.jpg" valign="top">
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="75" align="center" valign="middle">
+                        <p class="blis_nome"><a target="_top" class="blis_nome" href="https://www.bairroarte.com/info/ver_produtos.php?id=5803">Cabide Bigode</a></p>
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="35" align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+				            <tbody><tr>
+	        			        <td align="center">
+	                       			<p style="margin-top: 0px; margin-bottom: 0" class="letra24"><font color="#546378">€ 29,00</font></p>
+												                    </td>
+				                <td width="10"></td>
+				                <td bgcolor="#CBCDDE" width="1"></td>
+				                <td width="40" align="center"><a target="_top" href="javascript:parent.abre_carrinho(5803)"><img alt="Adicionar ao Carrinho" border="0" src="./cart.gif" width="20" height="20" id="cp5803" name="cp5803" onmouseover="javascript:muda_cart(&#39;5803&#39;,1);" onmouseout="javascript:muda_cart(&#39;5803&#39;,0);"></a></td>
+				            </tr>
+				        </tbody></table>                    </td>
+                </tr>
+            </tbody></table>
+			</li><li style="margin: 0px; padding: 0px; height: 290px; display: list-item;">
+			<table border="0" width="180" height="290" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td height="180" width="180" style="cursor:pointer; background-repeat: no-repeat; background-position: center;" title="Ver Mais" onclick="top.location.href=&#39;../info/ver_produtos.php?id=5802&#39;" background="./lista_5802.jpg" valign="top">
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="75" align="center" valign="middle">
+                        <p class="blis_nome"><a target="_top" class="blis_nome" href="https://www.bairroarte.com/info/ver_produtos.php?id=5802">Cabide Colher</a></p>
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="35" align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+				            <tbody><tr>
+	        			        <td align="center">
+	                       			<p style="margin-top: 0px; margin-bottom: 0" class="letra24"><font color="#546378">€ 33,00</font></p>
+												                    </td>
+				                <td width="10"></td>
+				                <td bgcolor="#CBCDDE" width="1"></td>
+				                <td width="40" align="center"><a target="_top" href="javascript:parent.abre_carrinho(5802)"><img alt="Adicionar ao Carrinho" border="0" src="./cart.gif" width="20" height="20" id="cp5802" name="cp5802" onmouseover="javascript:muda_cart(&#39;5802&#39;,1);" onmouseout="javascript:muda_cart(&#39;5802&#39;,0);"></a></td>
+				            </tr>
+				        </tbody></table>                    </td>
+                </tr>
+            </tbody></table>
+			</li><li style="margin: 0px; padding: 0px; height: 290px; display: list-item;">
+			<table border="0" width="180" height="290" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td height="180" width="180" style="cursor:pointer; background-repeat: no-repeat; background-position: center;" title="Ver Mais" onclick="top.location.href=&#39;../info/ver_produtos.php?id=5801&#39;" background="./lista_5801.jpg" valign="top">
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="75" align="center" valign="middle">
+                        <p class="blis_nome"><a target="_top" class="blis_nome" href="https://www.bairroarte.com/info/ver_produtos.php?id=5801">Cabide Faca</a></p>
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="35" align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+				            <tbody><tr>
+	        			        <td align="center">
+	                       			<p style="margin-top: 0px; margin-bottom: 0" class="letra24"><font color="#546378">€ 33,00</font></p>
+												                    </td>
+				                <td width="10"></td>
+				                <td bgcolor="#CBCDDE" width="1"></td>
+				                <td width="40" align="center"><a target="_top" href="javascript:parent.abre_carrinho(5801)"><img alt="Adicionar ao Carrinho" border="0" src="./cart.gif" width="20" height="20" id="cp5801" name="cp5801" onmouseover="javascript:muda_cart(&#39;5801&#39;,1);" onmouseout="javascript:muda_cart(&#39;5801&#39;,0);"></a></td>
+				            </tr>
+				        </tbody></table>                    </td>
+                </tr>
+            </tbody></table>
+			</li><li style="margin: 0px; padding: 0px; height: 290px; display: list-item;">
+			<table border="0" width="180" height="290" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td height="180" width="180" style="cursor:pointer; background-repeat: no-repeat; background-position: center;" title="Ver Mais" onclick="top.location.href=&#39;../info/ver_produtos.php?id=5800&#39;" background="./lista_5800.jpg" valign="top">
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="75" align="center" valign="middle">
+                        <p class="blis_nome"><a target="_top" class="blis_nome" href="https://www.bairroarte.com/info/ver_produtos.php?id=5800">Cabide Garfo</a></p>
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="35" align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+				            <tbody><tr>
+	        			        <td align="center">
+	                       			<p style="margin-top: 0px; margin-bottom: 0" class="letra24"><font color="#546378">€ 33,00</font></p>
+												                    </td>
+				                <td width="10"></td>
+				                <td bgcolor="#CBCDDE" width="1"></td>
+				                <td width="40" align="center"><a target="_top" href="javascript:parent.abre_carrinho(5800)"><img alt="Adicionar ao Carrinho" border="0" src="./cart.gif" width="20" height="20" id="cp5800" name="cp5800" onmouseover="javascript:muda_cart(&#39;5800&#39;,1);" onmouseout="javascript:muda_cart(&#39;5800&#39;,0);"></a></td>
+				            </tr>
+				        </tbody></table>                    </td>
+                </tr>
+            </tbody></table>
+			</li><li style="margin: 0px; padding: 0px; height: 290px; display: list-item;">
+			<table border="0" width="180" height="290" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td height="180" width="180" style="cursor:pointer; background-repeat: no-repeat; background-position: center;" title="Ver Mais" onclick="top.location.href=&#39;../info/ver_produtos.php?id=5793&#39;" background="./lista_5793.jpg" valign="top">
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="75" align="center" valign="middle">
+                        <p class="blis_nome"><a target="_top" class="blis_nome" href="https://www.bairroarte.com/info/ver_produtos.php?id=5793">Cabides Parefusos</a></p>
+                    </td>
+                </tr>
+				<tr>
+                	<td width="180" height="35" align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+				            <tbody><tr>
+	        			        <td align="center">
+	                       			<p style="margin-top: 0px; margin-bottom: 0" class="letra24"><font color="#546378">€ 29,00</font></p>
+												                    </td>
+				                <td width="10"></td>
+				                <td bgcolor="#CBCDDE" width="1"></td>
+				                <td width="40" align="center"><a target="_top" href="javascript:parent.abre_carrinho(5793)"><img alt="Adicionar ao Carrinho" border="0" src="./cart.gif" width="20" height="20" id="cp5793" name="cp5793" onmouseover="javascript:muda_cart(&#39;5793&#39;,1);" onmouseout="javascript:muda_cart(&#39;5793&#39;,0);"></a></td>
+				            </tr>
+				        </tbody></table>                    </td>
+                </tr>
+            </tbody></table>
+			</li></ul>
+	</div>
+<script>
+$('.myclass').vTicker({
+	speed: 1000,
+	pause: 6000,
+    showItems: 1,
+	animation: 'fade',
+	mousePause: true,
+	height: 0,
+	direction: 'up'
+});
+
+$(document).ready(function(){
+  });
+</script>
+
+
+
+</body></html>
